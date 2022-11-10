@@ -6,10 +6,17 @@ public class StoreSimulatorRunner {
         int b = s.nextInt();
         StoreSimulator TripOne = new StoreSimulator(b);
         System.out.println("Your budget is $" + b);
+        System.out.println();
 
-        System.out.println("How many apples would you like to buy? Each apple costs $0.99");
+        System.out.println("How many apples would you like to buy? Each apple costs $0.99. Enter -1 if you wish to not buy any apples.");
         int a = s.nextInt();
         TripOne.buyApples(a);
+        System.out.println();
+
+        System.out.println("How many bananas would you like to buy? Each apple costs $0.75. Enter -1 if you wish to not buy any bananas.");
+        int ban = s.nextInt();
+        TripOne.buyBananas(ban);
+        System.out.println();
 
 
     }
